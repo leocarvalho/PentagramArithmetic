@@ -433,7 +433,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -701,7 +701,7 @@ Transform:
   m_GameObject: {fileID: 887445981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 204896116}
   m_RootOrder: 0
@@ -717,8 +717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2af26fb141f51f48b9f0a7ff0cf325b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 100425404}
-  level: 1
+  target: {fileID: 648311161}
+  level: 0
 --- !u!61 &887445984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -858,7 +858,7 @@ Transform:
   m_GameObject: {fileID: 924928373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 204896116}
   m_RootOrder: 1
@@ -944,8 +944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2af26fb141f51f48b9f0a7ff0cf325b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 100425404}
-  level: 2
+  target: {fileID: 648311161}
+  level: 1
 --- !u!1 &979046209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1100,7 @@ Transform:
   m_GameObject: {fileID: 1230576624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 204896116}
   m_RootOrder: 2
@@ -1186,8 +1186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2af26fb141f51f48b9f0a7ff0cf325b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 100425404}
-  level: 3
+  target: {fileID: 648311161}
+  level: 2
 --- !u!1 &1311102137
 GameObject:
   m_ObjectHideFlags: 0

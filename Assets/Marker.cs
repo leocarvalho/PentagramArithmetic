@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Marker : MonoBehaviour {
+	public Pentagram pentagram;
 	private Vector3 screenPoint;
     private Vector3 offset;
 
@@ -12,11 +13,10 @@ public class Marker : MonoBehaviour {
 
 	bool moving = false;
 
-	TargetDigit[] digits;
-
-	// Use this for initialization
-	void Start () {
-		digits = FindObjectsOfType<TargetDigit>();
+	public int value{
+		get{
+			return target.digit;
+		}
 	}
 	
 	// Update is called once per frame
@@ -25,7 +25,7 @@ public class Marker : MonoBehaviour {
 
 		}else{
 			Vector3 pos = target.transform.position;
-			pos.z = -level;
+			pos.z = level - 3;
 			transform.position = pos;
 		}
 	}
@@ -47,7 +47,7 @@ public class Marker : MonoBehaviour {
 		moving = false;
 		float minDist = Vector2.Distance(transform.position, target.transform.position);
 		int currDigit = target.digit;
-		foreach (var d in digits)
+		foreach (var d in pentagram.digits)
 		{
 			float dist = Vector2.Distance(transform.position, d.transform.position);
 			if(dist < minDist){

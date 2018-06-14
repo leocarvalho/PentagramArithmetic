@@ -23,15 +23,6 @@ public class TargetDigit : MonoBehaviour {
 			s = gr*Params.radio/4;
 		}
 
-		transform.position = new Vector2(s*Mathf.Sin(t), s*Mathf.Cos(t));
+		transform.localPosition = new Vector2(s*Mathf.Sin(t), s*Mathf.Cos(t));
 	}
-
-	void OnGUI(){
-		Vector2 viewportPoint = Camera.main.WorldToScreenPoint(transform.position);  //convert game object position to VievportPoint
-		float x = viewportPoint.x;
-		float y = Screen.height - viewportPoint.y;
-
-     	GUI.Label(new Rect(x, y, Screen.width, Screen.height), digit.ToString());	
-		
- 	} 
 }
